@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #ffffff;
+}
+
+/* Top Bar */
+
+.top-bar {
+    background: #75131a;
+    color: white;
+    padding: 9px 6%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 6%;
+    background: white;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #8b1720;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    border: 4px solid #d6ad55;
+}
+
+.logo-section h1 {
+    color: #7b151d;
+    font-size: 25px;
+}
+
+.logo-section p {
+    color: #777;
+    margin-top: 4px;
+    font-size: 13px;
+}
+
+.apply-btn {
+    background: #d6ad55;
+    border: none;
+    color: white;
+    padding: 13px 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.apply-btn:hover {
+    background: #b88e35;
+}
+
+/* Navigation */
+
+nav {
+    background: #171717;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 17px 25px;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    background: #8b1720;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 520px;
+    background:
+        linear-gradient(rgba(55, 10, 15, 0.72), rgba(55, 10, 15, 0.72)),
+        url("https://images.unsplash.com/photo-1564981797816-1043664bf78d?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 30px;
+}
+
+.welcome {
+    color: #e2bd67;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.hero button,
+.mca-buttons button {
+    padding: 14px 25px;
+    border: none;
+    background: #d6ad55;
+    color: white;
+    font-weight: bold;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.outline-btn {
+    background: transparent !important;
+    border: 1px solid white !important;
+}
+
+/* About */
+
+.about {
+    padding: 80px 8%;
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    background: #faf8f4;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.small-title {
+    color: #a27b30;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.about h2,
+.programs h2 {
+    color: #70151c;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about-text > p:not(.small-title) {
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.read-btn {
+    margin-top: 10px;
+    padding: 13px 25px;
+    border: none;
+    background: #7b151d;
+    color: white;
+    cursor: pointer;
+}
+
+.about-card {
+    width: 330px;
+    padding: 45px 30px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    border-top: 5px solid #d6ad55;
+}
+
+.card-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.about-card h3 {
+    color: #7b151d;
+    margin-bottom: 12px;
+}
+
+.about-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Programs */
+
+.programs {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.program-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.program-card {
+    width: 30%;
+    padding: 35px 25px;
+    border: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.program-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.program-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.program-card h3 {
+    color: #7b151d;
+    margin-bottom: 12px;
+}
+
+.program-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* MCA Section */
+
+.mca-section {
+    min-height: 450px;
+
+    background:
+        linear-gradient(rgba(91, 15, 23, 0.88), rgba(91, 15, 23, 0.88)),
+        url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.mca-overlay {
+    max-width: 850px;
+    padding: 40px;
+}
+
+.mca-small {
+    color: #e0bb64;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.mca-section h2 {
+    font-size: 58px;
+    margin-bottom: 20px;
+}
+
+.mca-description {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #f1f1f1;
+}
+
+.light-btn {
+    background: transparent !important;
+    border: 1px solid white !important;
+}
+
+/* Footer */
+
+footer {
+    background: #161616;
+    color: white;
+}
+
+.footer-content {
+    padding: 55px 8%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-content > div {
+    width: 30%;
+}
+
+.footer-content h3 {
+    color: #d6ad55;
+    margin-bottom: 18px;
+}
+
+.footer-content p {
+    color: #bbb;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.copyright {
+    border-top: 1px solid #333;
+    text-align: center;
+    padding: 20px;
+    color: #999;
+    font-size: 13px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .logo-section {
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-card {
+        width: 100%;
+    }
+
+    .program-container {
+        flex-direction: column;
+    }
+
+    .program-card {
+        width: 100%;
+    }
+
+    .mca-section h2 {
+        font-size: 42px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-content > div {
+        width: 100%;
+    }
+}
